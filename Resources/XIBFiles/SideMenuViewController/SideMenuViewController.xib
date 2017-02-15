@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenuViewController">
+            <connections>
+                <outlet property="btnImportExport" destination="lol-Zu-4nE" id="GDO-7n-FAE"/>
+                <outlet property="btnMyAccount" destination="psq-IT-uXb" id="F3g-Qr-hjE"/>
+                <outlet property="btnMyIntervals" destination="ive-qk-o81" id="dE4-cH-Elc"/>
+                <outlet property="btnMyLogs" destination="81B-rl-RjQ" id="v0d-XP-01e"/>
+                <outlet property="btnMyRecordings" destination="Zlz-hg-Bke" id="0K9-JH-Lgz"/>
+                <outlet property="btnSettings" destination="4BY-Ub-BTy" id="PPn-nD-ABN"/>
+                <outlet property="imageViewImportExport" destination="Hlm-iM-bAp" id="D13-Bd-kMJ"/>
+                <outlet property="imageViewMyAccount" destination="agu-yy-sr7" id="K4z-Zh-m7g"/>
+                <outlet property="imageViewMyIntervals" destination="0oE-C8-XZC" id="Wey-E3-bUE"/>
+                <outlet property="imageViewMyLogs" destination="yh4-ZT-ycb" id="vKf-EO-4xH"/>
+                <outlet property="imageViewMyRecordings" destination="luE-3i-6zi" id="eSm-9P-dIL"/>
+                <outlet property="imageViewProfilePicture" destination="lGF-4x-Fte" id="biP-Oq-Ldp"/>
+                <outlet property="imageViewSettings" destination="Rxb-lP-ahH" id="EY1-KV-kZS"/>
+                <outlet property="lblFullName" destination="IXg-0G-lSo" id="xJ2-OE-JxY"/>
+                <outlet property="lblImportExport" destination="7ps-rv-M6f" id="Eer-Jd-FVY"/>
+                <outlet property="lblMyAccount" destination="8W5-Ya-zoj" id="N58-Ee-LGC"/>
+                <outlet property="lblMyIntervals" destination="8Rz-fN-vhX" id="dP3-fI-MKK"/>
+                <outlet property="lblMyLogs" destination="h7J-pd-ms7" id="hlB-mp-HeR"/>
+                <outlet property="lblMyRecordings" destination="P1U-m6-Ubw" id="pmO-ak-x8h"/>
+                <outlet property="lblSettings" destination="kTe-cg-OdN" id="saI-b2-Iwh"/>
+                <outlet property="mainContainerView" destination="1UO-ta-XV8" id="zMr-bV-YOf"/>
+                <outlet property="mainImageViewBackground" destination="Grg-sL-dDv" id="TXh-L1-beg"/>
+                <outlet property="mainScrollView" destination="NAf-2v-C2E" id="oWv-P3-W8Z"/>
+                <outlet property="separatorView1" destination="RjO-p6-0Ea" id="oRI-tz-dsV"/>
+                <outlet property="separatorView2" destination="cds-EP-gZq" id="nID-di-zzT"/>
+                <outlet property="separatorView3" destination="s4r-ag-Dq6" id="B5B-bX-ivy"/>
+                <outlet property="separatorView4" destination="2z4-WV-7hy" id="Doy-Zn-jx7"/>
+                <outlet property="separatorView5" destination="AeV-h3-79L" id="hCB-yN-TuD"/>
+                <outlet property="separatorView6" destination="Tap-Eu-Hjx" id="gRC-gW-loJ"/>
+                <outlet property="separatorView7" destination="m6M-th-6CH" id="nU2-qQ-RFx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="NAf-2v-C2E">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="1UO-ta-XV8">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="side_menu_background.png" id="Grg-sL-dDv">
+                                    <rect key="frame" x="0.0" y="0.0" width="259" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="lGF-4x-Fte" customClass="AsyncImageView">
+                                    <rect key="frame" x="10" y="40" width="60" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="John Doe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IXg-0G-lSo">
+                                    <rect key="frame" x="10" y="110" width="240" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view alpha="0.20000000000000001" contentMode="scaleToFill" id="RjO-p6-0Ea">
+                                    <rect key="frame" x="0.0" y="150" width="260" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="my_intervals.png" id="0oE-C8-XZC" customClass="AsyncImageView">
+                                    <rect key="frame" x="10" y="173" width="20" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Intervals" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Rz-fN-vhX">
+                                    <rect key="frame" x="40" y="170" width="205" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ive-qk-o81">
+                                    <rect key="frame" x="0.0" y="150" width="260" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </button>
+                                <view alpha="0.20000000298023224" contentMode="scaleToFill" id="cds-EP-gZq">
+                                    <rect key="frame" x="45" y="200" width="205" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="my_recordings.png" id="luE-3i-6zi" customClass="AsyncImageView">
+                                    <rect key="frame" x="10" y="223" width="20" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Recordings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P1U-m6-Ubw">
+                                    <rect key="frame" x="40" y="220" width="205" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zlz-hg-Bke">
+                                    <rect key="frame" x="0.0" y="200" width="260" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </button>
+                                <view alpha="0.20000000298023224" contentMode="scaleToFill" id="s4r-ag-Dq6">
+                                    <rect key="frame" x="45" y="250" width="205" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="import_export.png" id="Hlm-iM-bAp" customClass="AsyncImageView">
+                                    <rect key="frame" x="10" y="273" width="20" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Import/Export" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7ps-rv-M6f">
+                                    <rect key="frame" x="40" y="270" width="205" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lol-Zu-4nE">
+                                    <rect key="frame" x="0.0" y="250" width="260" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </button>
+                                <view alpha="0.20000000298023224" contentMode="scaleToFill" id="2z4-WV-7hy">
+                                    <rect key="frame" x="45" y="300" width="205" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="my_logs.png" id="yh4-ZT-ycb" customClass="AsyncImageView">
+                                    <rect key="frame" x="10" y="323" width="20" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Logs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h7J-pd-ms7">
+                                    <rect key="frame" x="40" y="320" width="205" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="81B-rl-RjQ">
+                                    <rect key="frame" x="0.0" y="300" width="260" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </button>
+                                <view alpha="0.20000000298023224" contentMode="scaleToFill" id="AeV-h3-79L">
+                                    <rect key="frame" x="45" y="350" width="205" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="settings.png" id="Rxb-lP-ahH" customClass="AsyncImageView">
+                                    <rect key="frame" x="10" y="373" width="20" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kTe-cg-OdN">
+                                    <rect key="frame" x="40" y="370" width="205" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4BY-Ub-BTy">
+                                    <rect key="frame" x="0.0" y="350" width="260" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </button>
+                                <view alpha="0.20000000298023224" contentMode="scaleToFill" id="Tap-Eu-Hjx">
+                                    <rect key="frame" x="45" y="400" width="205" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="my_account.png" id="agu-yy-sr7" customClass="AsyncImageView">
+                                    <rect key="frame" x="10" y="423" width="20" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8W5-Ya-zoj">
+                                    <rect key="frame" x="40" y="420" width="205" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="psq-IT-uXb">
+                                    <rect key="frame" x="0.0" y="400" width="260" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </button>
+                                <view alpha="0.20000000298023224" contentMode="scaleToFill" id="m6M-th-6CH">
+                                    <rect key="frame" x="45" y="450" width="205" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="284" y="312"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="import_export.png" width="100" height="100"/>
+        <image name="my_account.png" width="100" height="100"/>
+        <image name="my_intervals.png" width="100" height="100"/>
+        <image name="my_logs.png" width="100" height="100"/>
+        <image name="my_recordings.png" width="100" height="100"/>
+        <image name="settings.png" width="100" height="100"/>
+        <image name="side_menu_background.png" width="920" height="2000"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

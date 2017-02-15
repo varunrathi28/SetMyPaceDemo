@@ -1,0 +1,29 @@
+//
+//  MyLogsIntervalTableViewCell.m
+//  SetMyPace
+//
+//  Created by Varun Rathi
+//  AddIntervalViewController.h
+//  SetMyPace
+//
+//     02/02/17.
+//   Copyright © 2017 varunrathi28. All rights reserved. on 01/02/17.
+//   Copyright © 2017 varunrathi28. All rights reserved.
+//
+
+#import "MyLogsIntervalTableViewCell.h"
+
+@implementation MyLogsIntervalTableViewCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+@end

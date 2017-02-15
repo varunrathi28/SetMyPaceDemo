@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ServerIP</key>
+	<string>http://hungere.com/hungere/api/</string>
+	<key>AvailabilityHostToCheck</key>
+	<string>http://www.google.com</string>
+	<key>Login</key>
+	<string>login.php</string>
+	<key>Signup</key>
+	<string>register.php</string>
+	<key>GetMostOrderedRestaurants</key>
+	<string>mostordered.php</string>
+</dict>
+</plist>
