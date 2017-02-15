@@ -12,11 +12,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <CoreLocation/CoreLocation.h>
 #import "TheSidebarController.h"
 #import "SideMenuViewController.h"
 
-@interface LoginViewController : UIViewController<UIScrollViewDelegate, UITextFieldDelegate, TheSidebarControllerDelegate>
+@interface LoginViewController : UIViewController<UIScrollViewDelegate, UITextFieldDelegate, TheSidebarControllerDelegate,CLLocationManagerDelegate>
 {
     //TO ANIMATE VIEW UP ON KEYBOARD SHOW
     CGFloat animatedDistance;

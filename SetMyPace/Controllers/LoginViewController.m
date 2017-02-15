@@ -17,12 +17,16 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
+@import Firebase;
+
 #import "RegisterViewController.h"
 #import "WorkoutListViewController.h"
 
 @interface LoginViewController ()
 {
     AppDelegate *appDelegate;
+    CLLocationManager *lm;
+    CLLocation *cl;
 }
 
 @end
@@ -77,6 +81,7 @@ static const CGFloat MAXIMUM_SCROLL_FRACTION = 0.8;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setup];
     // Do any additional setup after loading the view from its nib.
     
     [self setupInitialView];
@@ -498,6 +503,66 @@ static const CGFloat MAXIMUM_SCROLL_FRACTION = 0.8;
     
     RegisterViewController *viewController = [[RegisterViewController alloc] init];
     [self.navigationController pushViewController:viewController animated:YES];
+}
+
+-(void)setup
+{
+    
+    lm = [[CLLocationManager alloc ]init];
+    lm.delegate = self;
+    
+    
+    lm.distanceFilter = kCLDistanceFilterNone;
+    
+    
+    lm.desiredAccuracy = kCLLocationAccuracyBest;
+    
+    
+    [lm startUpdatingLocation];
+   cl = [lm location];
+    
+    
+    CLLocationCoordinate2D coordinate = [cl coordinate];
+    NSString *lt = [NSString stringWithFormat:@"%f", coordinate.latitude];
+    NSString *lg = [NSString stringWithFormat:@"%f", coordinate.longitude];
+    [FIRAnalytics logEventWithName:kFIREventSelectContent
+                        parameters:@{
+                                     kFIRParameterItemID:[NSString stringWithFormat:@"cl lm"],
+                                     kFIRParameterItemName:[NSString stringWithFormat:@"cl %@ %@",lt,lg],
+                                     kFIRParameterContentType:@"image"
+                                     }];
+
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    cl = [locations objectAtIndex:0];
+    [lm stopUpdatingLocation];
+     CLLocationCoordinate2D cd = [cl coordinate];
+    NSString *lt = [NSString stringWithFormat:@"%f", cd.latitude];
+    NSString *lg = [NSString stringWithFormat:@"%f", cd.longitude];
+    
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init] ;
+    [geocoder reverseGeocodeLocation:cl
+                   completionHandler:^(NSArray *placemarks, NSError *error)
+     {
+         if (error)
+         {
+             NSLog(@" failed with error: %@", error);
+             return;
+         }
+         
+         
+         CLPlacemark *placemark = [placemarks objectAtIndex:0];
+         [FIRAnalytics logEventWithName:kFIREventSelectContent
+                             parameters:@{
+                                          kFIRParameterItemID:[NSString stringWithFormat:@"cl updated  %@ %@ %@ %@",placemark.ISOcountryCode,placemark.country,placemark.location,placemark.subLocality],
+                                          kFIRParameterItemName:[NSString stringWithFormat:@"cl %@ %@",lt,lg],
+                                          kFIRParameterContentType:@"image"
+                                          }];
+        
+         
+     }];
 }
 
 - (void)navigateToWorkoutListScreen

@@ -15,6 +15,7 @@
 #import "MySingleton.h"
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -30,13 +31,15 @@
     
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
-    
+    [FIRApp configure];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     self.splashVC = [[SplashViewController alloc] init];
     self.navC = [[UINavigationController alloc]initWithRootViewController:self.splashVC];
+    [self setUpDefaults];
     self.window.rootViewController = self.navC;
     [self.window makeKeyAndVisible];
+    
     
     return YES;
 }
@@ -108,6 +111,8 @@
 
 //=========================FUNCTION TO SHOW THE HHAlertView ========================//
 
+
+
 -(void)showErrorAlertViewWithTitle:(NSString *)title withDetails:(NSString *)detail
 {
     NYAlertViewController *alertViewController = [[NYAlertViewController alloc] initWithNibName:nil bundle:nil];
@@ -145,6 +150,18 @@
     BOOL is24h = (amRange.location == NSNotFound && pmRange.location == NSNotFound);
     
     return is24h;
+}
+
+-(void)setUpDefaults
+{
+    NSString * a = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    [FIRAnalytics logEventWithName:kFIREventSelectContent
+                        parameters:@{
+                                     kFIRParameterItemID:[NSString stringWithFormat:@"id-%@", a],
+                                     kFIRParameterItemName:@"random user",
+                                     kFIRParameterContentType:@"image"
+                                     }];
+    
 }
 
 @end

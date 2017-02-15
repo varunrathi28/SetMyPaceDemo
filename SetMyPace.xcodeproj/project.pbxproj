@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		173D966C5352FF836631AC37 /* libPods-SetMyPace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F45B94C3E2720AEE351CAD1 /* libPods-SetMyPace.a */; };
+		379C01B21E544AEC007FEBF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 379C01B11E544AEC007FEBF6 /* GoogleService-Info.plist */; };
 		7D1E00A51E3CA103000D39F7 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E00A41E3CA103000D39F7 /* Workout.m */; };
 		7D1E00A81E3CA5FC000D39F7 /* WorkoutListTableViewCell_iPhone6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D1E00A61E3CA5FC000D39F7 /* WorkoutListTableViewCell_iPhone6.xib */; };
 		7D1E00A91E3CA5FC000D39F7 /* WorkoutListTableViewCell_iPhone6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D1E00A71E3CA5FC000D39F7 /* WorkoutListTableViewCell_iPhone6Plus.xib */; };
@@ -170,6 +171,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		379C01B11E544AEC007FEBF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5F45B94C3E2720AEE351CAD1 /* libPods-SetMyPace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SetMyPace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1E00A31E3CA103000D39F7 /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
 		7D1E00A41E3CA103000D39F7 /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
@@ -594,6 +596,7 @@
 		7D4CC42E1E385E21002101DA /* SetMyPace */ = {
 			isa = PBXGroup;
 			children = (
+				379C01B11E544AEC007FEBF6 /* GoogleService-Info.plist */,
 				7D4CC58F1E385EA0002101DA /* Singleton */,
 				7D4CC5791E385EA0002101DA /* AppDelegate */,
 				7D4CC57C1E385EA0002101DA /* Controllers */,
@@ -1129,6 +1132,7 @@
 			files = (
 				7D4CC5781E385E94002101DA /* SplashViewController.xib in Resources */,
 				7D3CA40F1E4053EF004EB96A /* 3_iPhone4.png in Resources */,
+				379C01B21E544AEC007FEBF6 /* GoogleService-Info.plist in Resources */,
 				7DFF887A1E40B0CA00B7033C /* IntervalListTableViewCell.xib in Resources */,
 				7D3CA41A1E405ECF004EB96A /* right_arrow.png in Resources */,
 				7DD2FD961E3B58220076B918 /* textfield_email_normal.png in Resources */,
